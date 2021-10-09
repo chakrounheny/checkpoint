@@ -1,24 +1,23 @@
 
 import './App.css';
-
+import image from './20494859.jpg'
 import {Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-     <Form>
-  <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-    <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="name@example.com" />
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-    <Form.Label>Example textarea</Form.Label>
-    <Form.Control as="textarea" rows={3} />
-  </Form.Group>
-</Form>
-    </div>
-  );
-}
+       <div style={{ border: "solid 1px black", maxWidth: "100vw" }}>
+       <h1 className="title red">Your name here</h1>
+         <br />
+          <img src={image} />
+          <br />
+           <img src="652a7adb1b_98148_01-intro-773.jpg" />
+         </div>
+        <video width={320} height={240} controls>
+           <source src="myVideo.mp4" type="video/mp4" />
+       </video>
 
+      </div>
+  )}
 export default App;
